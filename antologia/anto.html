@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="back">
             <a href="../index.html" class="btn" id="back"><h1><img src="../back.svg" width="25px"> Menu</h1></a>
         </div>
@@ -21,15 +21,17 @@
         <center>
         <h1>ANTOLOGÍA LITERARIA</h1>
         <br>
-        <a href="Antología_Literaria_2año.pdf" class="btn" target="_blank" download="Antología Literaria 2año.pdf">DESCARGAR ☚</a>
+        <a href="Antología_Literaria_2año.pdf" class="btn" target="_blank" download="Antología Literaria 2año.pdf" id="download">DESCARGAR ☚</a>
         <br><br>
-        <p style="max-width: 80%;">Hola 👋, les comparto la <b>Antología Literaria</b> para los que no la tengan 😉:</p>
+        <p style="max-width: 80%;">Hola 👋, les comparto la <b>Antología Literaria</b> para los que no lo tengan 😉:</p>
         <br>
 
         <div>
             <a href="Antología_Literaria_2año.pdf" target="_blank"><img src="mst.png" class="mst"></a>
+            <p>Si no lo pueden observar por el internet lento solo <a href="#header" class="btn2">descárguenlo.</a></p>
         </div>
         <br>
+        <br><br><br><br>
         <p><strong id="strong">Atentamente:</strong> José Almeida. </p>
     </center>
     </div>
@@ -38,7 +40,12 @@
 
     <style>
         * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        scroll-behavior: smooth;
+
     }
 
     .btn {
@@ -55,6 +62,24 @@
         background-color: #1155a8;
         color: white;
         }
+
+        .btn2 {
+            text-decoration: none;
+            color: black;
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 50px;
+            transition-property: background-color, color, text-decoration;
+            transition-duration: 100ms;
+        }
+
+        .btn2:hover {
+            color: white;
+            background-color: #1155a8;
+        }
+
+
 
         #strong {
             color: blue;
