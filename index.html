@@ -1,3 +1,4 @@
+
 <!-- Hola compañeros :p, ¿que hacen viendo esto? -.- -->
 <!DOCTYPE html>
 <html lang="es">
@@ -16,19 +17,22 @@
     </div>
 <br><br>
 <center>
-    <div>
+    <div id="title">
         <h1>RECURSOS YA PUBLICADOS</h1>
-        <p style="max-width: 80%;">Les dejo los recursos que pueden encontrar actualmente:</p>
+        <p style="max-width: 80%; margin-bottom: 40px;">Les dejo los recursos que pueden encontrar actualmente:</p>
     </div>
 </center>
-<br>
 <center>
+<div id="content-elements">
     <div id="elements">
         <a href="actividades/27-II/272.html" class="btn">RECURSO ACTIVIDAD 27-II</a>
         <a href="actividades/29-II/292.html" class="btn">RECURSO TEXTO 2 ACTIVIDAD 29-II</a>
         <a href="actividades/32-I/321.html" class="btn">ACTIVIDAD 32-I</a>
+        <a href="actividades/32-II/322.html" class="btn">ACTIVIDAD 32-II</a>
         <a href="actividades/antologia/anto.html" class="btn">ANTOLOGÍA LITERARIA</a>
+        <a href="actividades/34-I/341.html" class="btn">ACTIVIDAD 34-I</a>
     </div>
+</div>
 <br><br>
 <div>
     <p><strong id="strong">Atentamente:</strong> José Almeida. </p>
@@ -46,8 +50,8 @@
             background-color: #1473e6;
             padding: 10px;
             border-radius: 50px;
-            transition-property: background-color, color, text-decoration;
-            transition-duration: 100ms;
+            transition-property: background-color, color, text-decoration, margin, padding;
+            transition-duration: 200ms;
         }
 
         .btn:hover {
@@ -60,26 +64,52 @@
             text-decoration: underline;
         }
 
+        p {
+                transition-property: margin-top, margin-bottom, width, height, max-widht, max-height, font-size;
+                transition-duration: 300ms;
+            }
+
         a {
             font-family: 'AdobeCleanSemiCn';
         }
-
-
-
-
 
         @font-face {
             font-family: AdobeCleanSemiCn;
             src: url('AdobeCleanSemiCn.woff');
         }
 
-        @media (max-width: 630px) {
-        .btn {
-            margin: 10px;
+
+
+
+
+
+
+        @media (max-width: 1000px) {
+            .btn {
+            padding: 18px;
+            margin: 10px 15%;
             display: block;
-        }   
+            }
+            
+            #title p {
+                margin-bottom: 15px !important;
+            }
+
         }
 
+        @media (max-width: 900px) {
+            .btn {
+            padding: 20px;
+            margin: 10px 5%;
+            display: block;
+            }             
+        }
+
+        @media (max-width: 630px) {
+        .btn {
+            margin: 10px 10%;
+            display: block;
+        }   
     </style>
 </body>
 </html>
