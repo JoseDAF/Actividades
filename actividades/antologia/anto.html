@@ -42,18 +42,26 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+    
     .btn {
-            text-decoration: none;
-            color: white;
-            background-color: #1473e6;
-            padding: 10px;
-            border-radius: 50px;
-            transition-property: background-color, color, text-decoration;
-            transition-duration: 200ms;
+	    text-decoration: none;
+        color: white;
+        background-color: #1473e6;
+        padding: 10px;
+        border-radius: 50px;
+        transition-property: background-color, color, text-decoration, padding;
+        transition-duration: 200ms;
+        }
+        
+    .btn:hover {
+	    background-color: #1155a8;
+	    animation-name: btnanimation;
+	    animation-duration: 1s;
         }
 
-        .btn:hover {
-        background-color: #1155a8;
+    @keyframes btnanimation {
+	    20% {padding: 20px 5px 20px 5px;}
+        50% {padding: 15px 40px; border-radius: 10px;}
         }
 
         .btn2 {
@@ -161,6 +169,11 @@
         #back:hover h1 {
             padding-left: 40px;
         }
+
+        @keyframes btnanimation {
+        20% {padding: 10px;}
+        50% {padding: 10px; border-radius: 50px;}
+}
         }
 
         @media (max-width: 500px) {
