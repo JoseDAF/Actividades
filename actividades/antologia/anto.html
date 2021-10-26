@@ -13,7 +13,7 @@
 <body>
     <header id="header">
         <div>
-            <a href="../../index.html" id="back"><h1 id="backh1"><img src="../../back.svg" width="25px"> Menu</h1></a>
+            <a href="../../index.html" id="back"><h1><img src="../../back.svg" width="25px"> Menu</h1></a>
         </div>
     </header>
 
@@ -49,12 +49,11 @@
             padding: 10px;
             border-radius: 50px;
             transition-property: background-color, color, text-decoration;
-            transition-duration: 100ms;
+            transition-duration: 200ms;
         }
 
         .btn:hover {
         background-color: #1155a8;
-        color: white;
         }
 
         .btn2 {
@@ -86,18 +85,16 @@
             font-family: 'AdobeCleanSemiCn';
         }
 
-        #backh1 {
-            font-family: 'AdobeCleanSemiCn';
-        }
-
         @font-face {
             font-family: AdobeCleanSemiCn;
             src: url('../../AdobeCleanSemiCn.woff');
         }
 
         #back {
+            text-align: center;
             width: 100px;
             display: inline-block;
+            margin-top: 0px;
             text-decoration: none;
             color: white;
             background-color: #1473e6;
@@ -107,32 +104,29 @@
             transition-duration: 250ms;
         }
 
-        #back:hover {
-        width: 150px;
-        background-color: #1155a8;
-        color: white;
-        }
-
-        #back:hover h1 {
-            padding-left: 60px;
-        }
-
-
         #back h1 {
-        padding-left: 40px;
+        padding-left: 35px;
         margin: auto;
-        font-size: 20px;
+        font-size: 20px !important;
         font-weight: 300;
         transition-property: padding-left;
         transition-duration: 350ms;
         }
-
+        
         #back img {
             position: absolute;
             top: 16px;
             left: 25px;
         }
 
+        #back:hover {
+        width: 150px;
+        background-color: #1155a8;
+        }
+
+        #back:hover h1 {
+            padding-left: 20px;
+        }
 
         .mst {
             border-radius: 10px; box-shadow: 0px 0px 10px gray; width: 30%; transition: width 200ms;
