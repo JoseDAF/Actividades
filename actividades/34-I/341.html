@@ -30,24 +30,26 @@
     </center>
     </div>
 
+
+    <!-- ESTILOS CSS -->
     <style>
         * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
         
-    .btn {
-	    text-decoration: none;
-        color: white;
-        background-color: #1473e6;
-        padding: 10px;
-        border-radius: 50px;
-        transition-property: background-color, color, text-decoration, padding;
-        transition-duration: 200ms;
+        .btn {
+	        text-decoration: none;
+            color: white;
+            background-color: #1473e6;
+            padding: 10px;
+            border-radius: 50px;
+            transition-property: background-color, color, text-decoration, padding;
+            transition-duration: 200ms;
         }
         
-    .btn:hover {
-	    background-color: #1155a8;
+        .btn:hover {
+	        background-color: #1155a8;
         }
 
         #strong {
@@ -79,12 +81,12 @@
         }
 
         #back h1 {
-        padding-left: 35px;
-        margin: auto;
-        font-size: 20px !important;
-        font-weight: 300;
-        transition-property: padding-left;
-        transition-duration: 350ms;
+            padding-left: 35px;
+            margin: auto;
+            font-size: 20px !important;
+            font-weight: 300;
+            transition-property: padding-left;
+            transition-duration: 350ms;
         }
 
         #back img {
@@ -94,8 +96,8 @@
         }
 
         #back:hover {
-        width: 150px;
-        background-color: #1155a8;
+            width: 150px;
+            background-color: #1155a8;
         }
 
         #back:hover h1 {
@@ -106,15 +108,19 @@
             border-radius: 10px; box-shadow: 0px 0px 10px gray; width: 30%; transition: width 200ms;
         }
 
-        
+       
+        /* MEDIA QUERIES */
+
+
+        /* 1300PX */
         @media (max-width: 1300px) {
             .mst {
                 width: 60%;
             }
-        }
+            }
 
 
-
+        /* 650PX */
         @media (max-width: 650px) {
         #back {
             width: 100px;
@@ -124,13 +130,14 @@
         #back h1 {
             padding-left: 40px;
         }
+
         .mst {
                 width: 70%;
             }
 
-            #back:hover {
-        width: 100px;
-        background-color: #1473e6;
+        #back:hover {
+            width: 100px;
+            background-color: #1473e6;
         }
 
         #back:hover h1 {
@@ -138,12 +145,13 @@
         }
         }
 
+
+        /* 450PX */
         @media (max-width: 450px) {
             .mst {
                 width: 90%;
             }
-        }
-
+            }
     </style>
 </body>
 </html>
