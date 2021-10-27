@@ -20,7 +20,6 @@
         <h1>ACTIVIDAD 34-II COMUNICACIÓN</h1>
         <br>
         <p style="max-width: 80%">Hola 👋, quería recordarles que el texto <i><b>"“El discursos del oso"</b></i> se encuentra en la página 88 de la antología literaria 😉.</p>
-
         <div>
             <img src="image.png" class="mst">
         </div>
@@ -33,24 +32,26 @@
     </center>
     </div>
 
+
+    <!-- ESTILOS CSS -->
     <style>
         * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
         
-    .btn {
-	    text-decoration: none;
-        color: white;
-        background-color: #1473e6;
-        padding: 10px;
-        border-radius: 50px;
-        transition-property: background-color, color, text-decoration, padding;
-        transition-duration: 200ms;
+        .btn {
+	        text-decoration: none;
+            color: white;
+            background-color: #1473e6;
+            padding: 10px;
+            border-radius: 50px;
+            transition-property: background-color, color, text-decoration, padding;
+            transition-duration: 200ms;
         }
         
-    .btn:hover {
-	    background-color: #1155a8;
+        .btn:hover {
+	        background-color: #1155a8;
         }        
 
         #strong {
@@ -111,12 +112,18 @@
         }
 
 
+        /* MEDIA QUERIES */
+
+
+        /* 1300PX */
         @media (max-width: 1300px) {
-            .mst {
-                width: 60%;
-            }
+        .mst {
+            width: 60%;
+        }
         }
 
+
+        /* 650PX */
         @media (max-width: 650px) {
         #back {
             width: 100px;
@@ -126,12 +133,14 @@
         #back h1 {
             padding-left: 40px;
         }
+
         .mst {
-                width: 70%;
-            }
-            #back:hover {
-        width: 100px;
-        background-color: #1473e6;
+            width: 70%;
+        }
+        
+        #back:hover {
+            width: 100px;
+            background-color: #1473e6;
         }
 
         #back:hover h1 {
@@ -139,21 +148,22 @@
         }
         }
 
+
+        /* 450PX */
         @media (max-width: 450px) {
-            .mst {
-                width: 90%;
-            }
+        .mst {
+            width: 90%;
+        }
 
-            #back:hover {
-        width: 100px;
-        background-color: #1473e6;
+        #back:hover {
+            width: 100px;
+            background-color: #1473e6;
         }
 
         #back:hover h1 {
             padding-left: 40px;
         }
         }
-
     </style>
 </body>
 </html>
