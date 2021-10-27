@@ -1,0 +1,116 @@
+
+<!-- Hola compañeros :p, ¿que hacen viendo esto? -.- -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+    <link rel="shortcut icon" href="../../icon.png" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <a href="../index.html" id="back"><h1 id="backh1"><img src="../back.svg" width="25px"> Menu</h1></a>
+        </div>
+    </header>
+
+    <div>
+        <center>
+        <h1>Hola 👋, estoy modificando esta página. ¡Pronto volverá 😁!</h1>
+        <br>
+        <p style="max-width: 80%;">En el caso de que necesites algún recurso, puedes regresar al menú 🤗.</p>
+        <div>
+            <img src="charger.gif" id="img-charger" width="20%">
+        </div>
+        <p><strong id="strong">Atentamente:</strong> José Almeida.</p>
+    </center>
+    </div>
+
+    
+    <!-- ESTILOS CSS -->
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #strong {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a {
+            font-family: 'AdobeCleanSemiCn';
+        }
+
+        @font-face {
+            font-family: AdobeCleanSemiCn;
+            src: url('../../AdobeCleanSemiCn.woff');
+        }
+
+        #back {
+            text-align: center;
+            width: 100px;
+            display: inline-block;
+            margin-top: 0px;
+            text-decoration: none;
+            color: white;
+            background-color: #1473e6;
+            padding: 10px;
+            border-radius: 50px;
+            transition-property: background-color, color, width;
+            transition-duration: 250ms;
+        }
+
+        #back h1 {
+            padding-left: 35px;
+            margin: auto;
+            font-size: 20px !important;
+            font-weight: 300;
+            transition-property: padding-left;
+            transition-duration: 350ms;
+        }
+
+        #back img {
+            position: absolute;
+            top: 16px;
+            left: 25px;
+        }
+
+        #back:hover {
+        width: 150px;
+        background-color: #1155a8;
+        }
+
+        #back:hover h1 {
+            padding-left: 20px;
+        }
+
+
+        /* MEDIA QUERIES */
+
+        
+        /* 650PX */
+        @media (max-width: 650px) {
+        #back {
+            width: 100px;
+            display: block;
+        }      
+
+        #back h1 {
+            padding-left: 40px;
+        }
+
+        #back:hover {
+            width: 100px;
+            background-color: #1473e6;
+        }
+
+        #back:hover h1 {
+            padding-left: 40px;
+        }
+        }
+    </style>
+</body>
+</html>
