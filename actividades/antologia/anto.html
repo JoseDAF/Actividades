@@ -25,36 +25,33 @@
         <br><br>
         <p style="max-width: 80%;">Hola 👋, les comparto la <b>Antología Literaria</b> para los que no lo tengan 😉:</p>
         <br>
-
         <div>
             <a href="Antología_Literaria_2año.pdf" target="_blank"><img src="mst.png" class="mst"></a>
             <p id="dhal">Si no lo pueden observar por el internet lento solo <a href="#header">descárguenlo.</a></p>
         </div>
-
         <p><strong id="strong">Atentamente:</strong> José Almeida. </p>
     </center>
     </div>
 
 
-
+    <!-- ESTILOS CSS -->
     <style>
         * {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
-    
-    .btn {
-	    text-decoration: none;
-        color: white;
-        background-color: #1473e6;
-        padding: 10px;
-        border-radius: 50px;
-        transition-property: background-color, color, text-decoration, padding;
-        transition-duration: 200ms;
+        .btn {
+	        text-decoration: none;
+            color: white;
+            background-color: #1473e6;
+            padding: 10px;
+            border-radius: 50px;
+            transition-property: background-color, color, text-decoration, padding;
+            transition-duration: 200ms;
         }
         
-    .btn:hover {
-	    background-color: #1155a8;
+        .btn:hover {
+	        background-color: #1155a8;
         }
 
         .btn2 {
@@ -71,7 +68,7 @@
         .btn2:hover {
             color: black;
             background-color: rgb(207, 207, 207);
-}        }
+        }
 
         #dhal {
             line-height: 10px !important;
@@ -106,12 +103,12 @@
         }
 
         #back h1 {
-        padding-left: 35px;
-        margin: auto;
-        font-size: 20px !important;
-        font-weight: 300;
-        transition-property: padding-left;
-        transition-duration: 350ms;
+            padding-left: 35px;
+            margin: auto;
+            font-size: 20px !important;
+            font-weight: 300;
+            transition-property: padding-left;
+            transition-duration: 350ms;
         }
         
         #back img {
@@ -121,8 +118,8 @@
         }
 
         #back:hover {
-        width: 150px;
-        background-color: #1155a8;
+            width: 150px;
+            background-color: #1155a8;
         }
 
         #back:hover h1 {
@@ -134,13 +131,18 @@
         }
 
 
+        /* MEDIA QUERIES */
+
+
+        /* 950PX */
         @media (max-width: 950px) {
-            .mst {
-                width: 50%;
-            }
+        .mst {
+            width: 50%;
+        }
         }
 
 
+        /* 650PX */
         @media (max-width: 650px) {
         #back {
             width: 100px;
@@ -152,11 +154,12 @@
         }
 
         .mst {
-                width: 70%;
-            }
-            #back:hover {
-        width: 100px;
-        background-color: #1473e6;
+            width: 70%;
+        }
+        
+        #back:hover {
+            width: 100px;
+            background-color: #1473e6;
         }
 
         #back:hover h1 {
@@ -164,19 +167,21 @@
         }
         }
 
-        @media (max-width: 500px) {
-            .mst {
-                width: 90%;
-            }
-        }
-
-        @media (max-width: 430px) {
-            .mst {
-                width: 90%;
-            }
         
+        /* 500PX */
+        @media (max-width: 500px) {
+        .mst {
+            width: 90%;
+        }
         }
 
+
+        /* 430PX */
+        @media (max-width: 430px) {
+        .mst {
+            width: 90%;
+        }
+        }
     </style>
 </body>
 </html>
