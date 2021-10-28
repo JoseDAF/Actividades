@@ -31,7 +31,6 @@
         <a href="actividades/34-I/341.html" class="btn">RECURSO ACTIVIDAD 34-I</a>
         <a href="actividades/34-II/342.html" class="btn">ACTIVIDAD 34-II</a>
         <a href="actividades/antologia/anto.html" class="btn">ANTOLOGÍA LITERARIA</a>
-        <a href="anuncio.html" class="btn2">ANUNCIO</a>
     </div>
 
 </div>
@@ -44,14 +43,13 @@
 </div>
 
 
-<!-- VENTANA 1 -->
+<!-- VENTANAS
 <div class="ventana" id="vent" style="max-width: 250px; background-color: #1473e6; border-top-left-radius: 10px; border-bottom-left-radius: 10px; position: absolute; right: 0px; bottom: 50px; position: fixed;">
     <div id="cerrar" style="position: absolute;"><a href="javascript:cerrar()"><img src="cancel.png" width="20px"></a></div>
     
     <p style="color: white; padding-left: 20px;"><b>ANUNCIO:</b> Pronto agregaré la opción de comentar, muy pronto 😎. </p>
 </div>
 
-<!-- VENTANA 2 -->
 <div class="ventana2" id="ventt" style="width: 180px; height: 50px;  background-color: #1473e6; border-top-right-radius: 10px; border-bottom-right-radius: 10px; position: absolute; top: 150px; left: 0; position: fixed; display: block;">
 
     <div id="cerrarr" style="position: absolute;"><a href="javascript:cerrarr()"><img src="cancel.png" width="30px"></a></div>
@@ -70,16 +68,12 @@
             document.getElementById("ventt").style.visibility="collapse";
         };
     </script>
-
+ -->
 
     <style>
         * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-
-        .ventana2 {
-            display: none !important;
-        }
 
         .body {
             overflow-x:hidden
@@ -92,21 +86,23 @@
             transition-duration: 500ms;
         }
 
+/*
         @keyframes open {
             0% {right: -250px;}
             100% {right: 0px;}
         }
+        
 
         .ventana2 {
             animation-name: close;
             animation-duration: 1s;
         }
 
-        @keyframes close {
-            0% {left: -180px;}
-            100% {left: 0px;}
+        .ventana2 {
+            display: none !important;
         }
-        
+*/
+
         .btn {
             font-size: 18px;
             text-decoration: none;
@@ -122,25 +118,6 @@
         .btn:hover {
         background-color: #1155a8;
         color: white;
-        }
-        
-        .btn2 {
-            font-size: 18px;
-            text-decoration: none;
-            color: white;
-            background-color: #eebc19;
-            padding: 10px;
-            margin: auto 5px;
-            box-shadow: 2px 2px 4px gray;
-            border: 2px solid white;
-            border-radius: 50px;
-            transition-property: background-color, color, text-decoration, margin, padding;
-            transition-duration: 200ms;
-        }
-
-        .btn2:hover {
-            background-color: #caa52a;
-            color: white;
         }
 
         #strong {
@@ -163,8 +140,9 @@
         }
 
 
+        /* MEDIA QUERIES */
 
-
+        /* 1293PX */
         @media (max-width: 1293px) {
             .btn {
                 padding: 18px;
@@ -185,7 +163,6 @@
             .ventana {
                 width: 150px;
             }
-
         }
 
         @media (max-width: 996px) {
