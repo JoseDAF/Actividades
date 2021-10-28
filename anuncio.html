@@ -1,158 +1,53 @@
+
 <!-- Hola compañeros :p, ¿que hacen viendo esto? -.- -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades</title>
+    <title>ANUNCIO IMPORTANTE</title>
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
-<body class="body">
+<body style="background-color: #cde4ff;">
     <div>
         <center>
-        <h1>ACTIVIDADES DE COMUNICACIÓN</h1>
-        <p style="max-width: 90%">Hola compañeros 👋, esta página es solamente para la materia de comunicación y solo para fines educativos. En este sitio publicaré recursos o elementos que no hayan sido encontrados.</p>
+        <h1 style="color: rgb(56, 56, 56);">ANUNCIO IMPORTANTE</h1>
+        <p style="max-width: 50%;">Hola compañeros 👋, esto no es un anuncio tan importante pero quería informarles que pronto colocaré una sección en cada uno de los recursos disponibles para que puedan comentar. Esto con el fin de que me puedan decir algunas mejoras que quieren que haga en la página y también para mencionarme qué recursos no tienen disponibles para compartírselos.</p>   
+        <p><strong id="strong">Atentamente:</strong> José Almeida.</p>
+
+        <p id="down" style="color: black; margin-bottom: 30px; font-weight: 500;">Para regresar, solo presionen aquí abajo 👇</p>
+        <a href="index.html" class="btn">REGRESAR AL MENU</a>
+
     </center>
     </div>
-<br><br>
-<center>
-    <div id="title">
-        <h1>RECURSOS YA PUBLICADOS</h1>
-        <p style="max-width: 80%; margin-bottom: 40px;">Les dejo los recursos que pueden encontrar actualmente:</p>
-    </div>
-</center>
-<center>
-<div id="content-elements">
-    <div id="1fila">
-        <a href="actividades/27-II/272.html" class="btn">RECURSO ACTIVIDAD 27-II</a>
-        <a href="actividades/29-II/292.html" class="btn">RECURSO TEXTO 2 ACTIVIDAD 29-II</a>
-        <a href="actividades/32-I/321.html" class="btn">ACTIVIDAD 32-I</a>
-        <a href="actividades/32-II/322.html" class="btn">ACTIVIDAD 32-II</a>
-        <a href="actividades/34-I/341.html" class="btn">RECURSO ACTIVIDAD 34-I</a>
-        <a href="actividades/34-II/342.html" class="btn">ACTIVIDAD 34-II</a>
-        <a href="actividades/antologia/anto.html" class="btn">ANTOLOGÍA LITERARIA</a>
-        <a href="anuncio.html" class="btn2">ANUNCIO</a>
-    </div>
 
-    <div id="2fila" style="margin-top: 40px;">
-    </div>
-</div>
-
-
-
-<br><br>
-<div>
-    <p><strong id="strong">Atentamente:</strong> José Almeida. </p>
-</div>
-
-
-<!-- VENTANA 1 -->
-<div class="ventana" id="vent" style="max-width: 250px; background-color: #1473e6; border-top-left-radius: 10px; border-bottom-left-radius: 10px; position: absolute; right: 0px; bottom: 50px; position: fixed;">
-    <div id="cerrar" style="position: absolute;"><a href="javascript:cerrar()"><img src="cancel.png" width="20px"></a></div>
     
-    <p style="color: white; padding-left: 20px;"><b>ANUNCIO:</b> Pronto agregaré la opción de comentar, muy pronto 😎. </p>
-</div>
-
-<!-- VENTANA 2 -->
-<div class="ventana2" id="ventt" style="width: 180px; height: 50px;  background-color: #1473e6; border-top-right-radius: 10px; border-bottom-right-radius: 10px; position: absolute; top: 150px; left: 0; position: fixed; display: block;">
-
-    <div id="cerrarr" style="position: absolute;"><a href="javascript:cerrarr()"><img src="cancel.png" width="30px"></a></div>
-    
-   <a href="anuncio.html"><p style="color: white; padding: 0px 0px 10px 30px;"><b>IMPORTANTE ☚</b></p></a>
-</div>
-</center>
-
-
-    <script>
-        function cerrar() {
-            document.getElementById("vent").style.display="none";
-        };
-
-        function cerrarr() {
-            document.getElementById("ventt").style.visibility="collapse";
-        };
-    </script>
-
-
+    <!-- ESTILOS CSS -->
     <style>
         * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
-        .ventana2 {
-            display: none !important;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        .body {
-            overflow-x:hidden
-        }
-        
-        .ventana {
-            animation-name: open;
-            animation-duration: 1s;
-            transition-property: width, height;
-            transition-duration: 500ms;
-        }
-
-        @keyframes open {
-            0% {right: -250px;}
-            100% {right: 0px;}
-        }
-
-        .ventana2 {
-            animation-name: close;
-            animation-duration: 1s;
-        }
-
-        @keyframes close {
-            0% {left: -180px;}
-            100% {left: 0px;}
-        }
-        
         .btn {
-            font-size: 18px;
             text-decoration: none;
             color: white;
             background-color: #1473e6;
             padding: 10px;
-            margin: auto 5px;
             border-radius: 50px;
-            transition-property: background-color, color, text-decoration, margin, padding;
+            border: 3px solid white;
+            box-shadow: 4px 5px 8px rgb(87, 87, 87);
+            transition-property: background-color, color, text-decoration, padding;
             transition-duration: 200ms;
-        }
-
-        .btn:hover {
-        background-color: #1155a8;
-        color: white;
         }
         
-        .btn2 {
-            font-size: 18px;
-            text-decoration: none;
-            color: white;
-            background-color: #eebc19;
-            padding: 10px;
-            margin: auto 5px;
-            box-shadow: 2px 2px 4px gray;
-            border: 2px solid white;
-            border-radius: 50px;
-            transition-property: background-color, color, text-decoration, margin, padding;
-            transition-duration: 200ms;
-        }
-
-        .btn2:hover {
-            background-color: #caa52a;
-            color: white;
+        .btn:hover {
+        background-color: #1155a8;
         }
 
         #strong {
-            color: blue;
+            color: #1473e6;
             text-decoration: underline;
-        }
-
-        p {
-            transition-property: margin-top, margin-bottom, width, height, max-widht, max-height, font-size;
-            transition-duration: 300ms;
         }
 
         a {
@@ -164,98 +59,7 @@
             src: url('AdobeCleanSemiCn.woff');
         }
 
-
-
-
-        @media (max-width: 1293px) {
-            .btn {
-                padding: 18px;
-                margin: 15px 15%;
-                display: block;
-            }
-
-            .btn2 {
-                padding: 18px;
-                margin: 15px 15%;
-                display: block;
-            }
-            
-            #title p {
-                margin-bottom: 15px !important;
-            }
-
-            .ventana {
-                width: 150px;
-            }
-
-        }
-
-        @media (max-width: 996px) {
-            .ventana {
-                width: 120px;
-                height: 220px;
-            }  
-            
-            .ventana p {
-                padding-right: 80px;
-            }     
-        }
-
-        @media (max-width: 820px) {
-
-            .ventana {
-                display: none;
-            }
-
-            .ventana2 {
-                display: block !important;
-            }
-
-            .ventana2 a {
-                text-decoration: none;
-            } 
-        }
-
-        @media (max-width: 574px) {
-            .ventana2 {
-                top: 210px !important;
-            }   
-        }
-
-        @media (max-width: 436px) {
-            .ventana2 {
-                top: 230px !important;
-            }
-        }
-        
-        @media (max-width: 387px) {
-            .ventana2 {
-                top: 250px !important;
-            }
-        }
-
-        @media (max-width: 305px) {
-            .ventana2 {
-                top: 270px !important;
-            }
-        }
-
-        @media (max-width: 295px) {
-            .ventana2 {
-                top: 300px !important;
-            }
-        }
-
-        @media (max-width: 630px) {
-        .btn {
-            margin: 10px 10%;
-            display: block;
-        }
-
-        .btn2 {
-            margin: 10px 10%;
-            display: block;
-        }
     </style>
+
 </body>
 </html>
