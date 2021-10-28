@@ -23,7 +23,7 @@
 </center>
 <center>
 <div id="content-elements">
-    <div id="elements">
+    <div id="1fila">
         <a href="actividades/27-II/272.html" class="btn">RECURSO ACTIVIDAD 27-II</a>
         <a href="actividades/29-II/292.html" class="btn">RECURSO TEXTO 2 ACTIVIDAD 29-II</a>
         <a href="actividades/32-I/321.html" class="btn">ACTIVIDAD 32-I</a>
@@ -31,8 +31,13 @@
         <a href="actividades/34-I/341.html" class="btn">RECURSO ACTIVIDAD 34-I</a>
         <a href="actividades/34-II/342.html" class="btn">ACTIVIDAD 34-II</a>
         <a href="actividades/antologia/anto.html" class="btn">ANTOLOGÍA LITERARIA</a>
+        <a href="anuncio.html" class="btn2">ANUNCIO</a>
     </div>
+
 </div>
+
+
+
 <br><br>
 <div>
     <p><strong id="strong">Atentamente:</strong> José Almeida. </p>
@@ -102,15 +107,13 @@
             100% {left: 0px;}
         }
         
-
-        
-
         .btn {
             font-size: 18px;
             text-decoration: none;
             color: white;
             background-color: #1473e6;
             padding: 10px;
+            margin: auto 5px;
             border-radius: 50px;
             transition-property: background-color, color, text-decoration, margin, padding;
             transition-duration: 200ms;
@@ -120,6 +123,25 @@
         background-color: #1155a8;
         color: white;
         }
+        
+        .btn2 {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: #eebc19;
+            padding: 10px;
+            margin: auto 5px;
+            box-shadow: 2px 2px 4px gray;
+            border: 2px solid white;
+            border-radius: 50px;
+            transition-property: background-color, color, text-decoration, margin, padding;
+            transition-duration: 200ms;
+        }
+
+        .btn2:hover {
+            background-color: #caa52a;
+            color: white;
+        }
 
         #strong {
             color: blue;
@@ -127,9 +149,9 @@
         }
 
         p {
-                transition-property: margin-top, margin-bottom, width, height, max-widht, max-height, font-size;
-                transition-duration: 300ms;
-            }
+            transition-property: margin-top, margin-bottom, width, height, max-widht, max-height, font-size;
+            transition-duration: 300ms;
+        }
 
         a {
             font-family: 'AdobeCleanSemiCn';
@@ -145,9 +167,15 @@
 
         @media (max-width: 1293px) {
             .btn {
-            padding: 18px;
-            margin: 10px 15%;
-            display: block;
+                padding: 18px;
+                margin: 15px 15%;
+                display: block;
+            }
+
+            .btn2 {
+                padding: 18px;
+                margin: 15px 15%;
+                display: block;
             }
             
             #title p {
@@ -220,7 +248,12 @@
         .btn {
             margin: 10px 10%;
             display: block;
-        }   
+        }
+
+        .btn2 {
+            margin: 10px 10%;
+            display: block;
+        }
     </style>
 </body>
 </html>
