@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header h1 {
+    margin-top: 80px;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+    transition-property: font-size;
+    transition-duration: 400ms;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 20px;
+    margin: auto 10px;
+    max-width: 80%;
+    font-family: 'SFUIText-Regular';
+}
+
+
+.download {
+    margin: 35px 0px;
+}
+
+.btn {
+    color: white;
+    font-size: 20px;
+    font-family: 'AdobeCleanSemiCn';
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 18px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition-property: background, width, padding, margin, border-radius, font-size;
+    transition-duration: 400ms;
+}
+
+.btn:hover {
+    border-radius: 10px;
+    background: #1473e685;
+
+}
+
+.btn:active {
+    font-size: 18px;
+}
+
+.back {
+    left: 10px;
+    position: fixed;
+    top: 0;
+    margin: 15px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'AdobeCleanSemiCn';
+    text-decoration: none;
+    padding: 10px 20px 10px 50px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 18px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition-property: background, width, padding, margin, border-radius, font-size;
+    transition-duration: 400ms;  
+    animation-name: back;
+    animation-duration: 1500ms;
+}
+
+@keyframes back {
+    0% {left: -200px;}
+    100% {left: 10px;}
+}
+
+.back img {
+    position: absolute;
+    left: 20px;
+    transition-property: left;
+    transition-duration: 400ms;
+}
+
+
+.back:hover {
+    border-radius: 10px;
+    background: #1473e685;
+    padding: 10px 20px 10px 70px;
+}
+
+.back:hover img {
+    left: 30px;
+}
+
+.comments h1 {
+    margin-top: 30px;
+}
+.mst {
+    border-radius: 20px;
+    margin-top: 0px;
+    width: 30%;
+    box-shadow: 2px 2px 5px white;
+    transition-property: width;
+    transition-duration: 400ms;
+}
+
+.mst2 {
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    box-shadow: 2px 2px 5px white;
+    transition-property: width;
+    transition-duration: 400ms;
+}
+
+@media (max-width: 1204px) {
+    .mst {
+        width: 40%;
+    }
+}
+
+@media (max-width: 942px) {
+    .mst {
+        width: 50%;
+    }
+
+    .back:hover {
+        border-radius: 18px;
+        background: rgba( 255, 255, 255, 0.25 );
+        padding: 10px 20px 10px 50px;
+    }
+    
+    .back:hover img {
+        left: 20px;
+    }
+
+    .btn:hover {
+        border-radius: 18px;
+        background: rgba( 255, 255, 255, 0.25 );    
+    }
+    
+    .btn:active {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mst {
+        width: 70%;
+    }
+}
+
+@media (max-width: 486px) {
+    .mst {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'SFUIText-Regular';
+    src: url(../styles/fonts/SFUIText-Regular.woff);
+}
+
+@font-face {
+    font-family: 'AdobeCleanSemiCn';
+    src: url(../styles/fonts/AdobeCleanSemiCn.woff);
+}
+
+
