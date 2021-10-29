@@ -67,12 +67,12 @@
 
         @font-face {
             font-family: AdobeCleanSemiCn;
-            src: url('fonts/AdobeCleanSemiCn.woff');
+            src: url('AdobeCleanSemiCn.woff');
         }
 
          @font-face {
             font-family: SFUIText-Regular;
-            src: url(fonts/SFUIText-Regular.woff);
+            src: url('SFUIText-Regular.woff');
         }
 
         /* MEDIA QUERIES */
