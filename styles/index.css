@@ -80,19 +80,19 @@ div {
 @media (max-width: 903px) {
     .btn {
         border-radius: 30px;
-        font-size: 20px;
         padding: 20px 0px;
         display: block;
         margin: 20px 40px !important;
     }
     
     .btn:hover {
+        font-size: 20px;
         border-radius: 30px;
         background: rgba( 255, 255, 255, 0.25 );    
     }
     
     .btn:active {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     p {
