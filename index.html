@@ -1,108 +1,82 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Comunicación | José Almeida</title>
+</head>
+<body>
+   <header>
+       <h1>ACTIVIDADES DE COMUNICACIÓN</h1>
+   </header> 
+
+   <center>
+   <section>
+       <div>
+           <p>Hola compañeros 👋, esta página es solamente para la materia de comunicación y solo para fines educativos. En este sitio publicaré recursos o elementos que no hayan sido encontrados.        </p>
+       </div>
+
+       <div>
+           <h1>RECURSOS YA PUBLICADOS:</h1>
+       </div>
+
+       <div>
+           <p>Les dejo los recursos que pueden encontrar actualmente:</p>
+       </div>
+
+       <div class="act1">
+           <a href="actividades/27-II/272.html" class="btn">RECURSO ACTIVIDAD 27-II</a>
+            <a href="actividades/29-II/292.html" class="btn">RECURSO TEXTO 2 ACTIVIDAD 29-II</a>
+            <a href="actividades/32-I/321.html" class="btn">ACTIVIDAD 32-I</a>
+            <a href="actividades/32-II/322.html" class="btn">ACTIVIDAD 32-II</a>
+            
+       </div>
+
+       <div class="act2">
+        <a href="actividades/34-I/341.html" class="btn">RECURSO ACTIVIDAD 34-I</a>
+        <a href="actividades/34-II/342.html" class="btn">ACTIVIDAD 34-II</a>
+        <a href="actividades/antologia/anto.html" class="btn">ANTOLOGÍA LITERARIA</a>
+       </div>
+
+       <div class="comments">
+        <h1>COMENTARIOS:</h1>
+        <div id="graphcomment"></div>
+<script type="text/javascript">
+
+  /* - - - CONFIGURATION VARIABLES - - - */
+
+  var __semio__params = {
+    graphcommentId: "Actividades-Comunicacion", // make sure the id is yours
+
+    behaviour: {
+      // HIGHLY RECOMMENDED
+      //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
+    },
+
+    // configure your variables here
+
+  }
+
+  /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
 
 
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
 
-h1, p {
-    color: white;
-    text-align: center;
-    transition-property: font-size;
-    transition-duration: 400ms;
-}
-
-h1 {
-    margin: 30px 10px;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-p {
-    margin: 30px 10px;
-    max-width: 60%;
-    font-family: 'SFUIText-Regular';
-}
-
-div {
-    align-items: center;
-    justify-content: center;
-}
-
-.btn {
-    color: white;
-    font-size: 20px;
-    font-family: 'AdobeCleanSemiCn';
-    text-decoration: none;
-    padding: 10px 20px;
-    background: rgba( 255, 255, 255, 0.25 );
-    backdrop-filter: blur( 0.5px );
-    border-radius: 18px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    transition-property: background, width, padding, margin, border-radius, font-size;
-    transition-duration: 400ms;
-}
-
-.btn:hover {
-    border-radius: 10px;
-    background: #0073ffa1;
-}
-
-.btn:active {
-    font-size: 18px;
-}
-
-.act1 {
-    margin-bottom: 40px;
-}
-
-.comments h1{
-    margin-top: 30px;
-}
-
-
-@font-face {
-    font-family: 'SFUIText-Regular';
-    src: url(../styles/fonts/SFUIText-Regular.woff);
-}
-
-
-@font-face {
-    font-family: 'AdobeCleanSemiCn';
-    src: url(../styles/fonts/AdobeCleanSemiCn.woff);
-}
-
-
-@media (max-width: 903px) {
-    .btn {
-        border-radius: 30px;
-        font-size: 20px;
-        padding: 20px 0px;
-        display: block;
-        margin: 20px 40px !important;
-    }
-    
-    .btn:hover {
-        border-radius: 30px;
-        background: rgba( 255, 255, 255, 0.25 );    
-    }
-    
-    .btn:active {
-        font-size: 25px;
-    }
-    
-    p {
-        font-size: 20px;
-        margin: 30px 10px;
-        max-width: 100%;
-        font-family: 'SFUIText-Regular';
-    }
-
-    
-    .act1 {
-        margin-bottom: 0px;
-}
+</script>
+       </div>
+   </section>
+</center>
+</body>
+</html>
