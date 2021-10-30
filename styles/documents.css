@@ -42,9 +42,7 @@ p {
     text-decoration: none;
     padding: 10px 20px;
     background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0.5px );
-    -webkit-backdrop-filter: blur( 0.5px );
     border-radius: 18px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition-property: background, width, padding, margin, border-radius, font-size;
@@ -53,7 +51,7 @@ p {
 
 .btn:hover {
     border-radius: 10px;
-    background: #1473e685;
+    background: #0073ffa1;
 
 }
 
@@ -72,9 +70,7 @@ p {
     text-decoration: none;
     padding: 10px 20px 10px 50px;
     background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0.5px );
-    -webkit-backdrop-filter: blur( 0.5px );
     border-radius: 18px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition-property: background, width, padding, margin, border-radius, font-size;
@@ -98,7 +94,7 @@ p {
 
 .back:hover {
     border-radius: 10px;
-    background: #1473e685;
+    background: #0073ffa1;
     padding: 10px 20px 10px 70px;
 }
 
