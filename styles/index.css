@@ -12,8 +12,6 @@ body {
 h1, p {
     color: white;
     text-align: center;
-    transition-property: font-size;
-    transition-duration: 400ms;
 }
 
 h1 {
