@@ -42,23 +42,18 @@ p {
     text-decoration: none;
     padding: 10px 20px;
     background: rgba( 255, 255, 255, 0.25 );
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0.5px);
     border-radius: 18px;
-    box-shadow: 0px 0px 10px gray;
     text-shadow: 2px 2px 10px black;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    transition-property: background, width, padding, margin, border-radius, font-size;
+    transition-property: background, border-radius, box-shadow;
     transition-duration: 400ms;
 }
 
 .btn:hover {
     border-radius: 10px;
-    background: #0073ffa1;
-
-}
-
-.btn:active {
-    font-size: 18px;
+    background: #143c5e83;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .back {
@@ -72,12 +67,11 @@ p {
     text-decoration: none;
     padding: 10px 20px 10px 50px;
     background: rgba( 255, 255, 255, 0.25 );
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0.5px);
     border-radius: 18px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    box-shadow: 0px 0px 10px gray;
-    text-shadow: 2px 2px 10px black;
-    transition-property: background, width, padding, margin, border-radius, font-size;
+    text-shadow: 2px 2px 10px gray;
+    transition-property: background, padding, border-radius, box-shadow;
     transition-duration: 400ms;  
     animation-name: back;
     animation-duration: 1500ms;
@@ -99,8 +93,9 @@ p {
 
 .back:hover {
     border-radius: 10px;
-    background: #0073ffa1;
+    background: #143c5e83;
     padding: 10px 20px 10px 60px;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .back:hover i {
@@ -140,11 +135,17 @@ p {
         width: 50%;
     }
 
+    .back {
+        background: #143c5e83;
+        box-shadow: 0px 0px 10px gray;
+        text-shadow: 0px 0px 10px black;
+    }    
 
     .back:hover {
         border-radius: 18px;
         background: rgba( 255, 255, 255, 0.25 );
         padding: 10px 20px 10px 50px;
+        box-shadow: 0px 0px 0px transparent;   
     }
     
     .back:hover img {
@@ -153,11 +154,8 @@ p {
 
     .btn:hover {
         border-radius: 18px;
-        background: rgba( 255, 255, 255, 0.25 );    
-    }
-    
-    .btn:active {
-        font-size: 20px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0px 0px 0px transparent;       
     }
 }
 
