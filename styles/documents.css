@@ -128,10 +128,18 @@ p {
     .mst {
         width: 40%;
     }
+
+    .mst2 {
+        width: 40%;
+    }
 }
 
 @media (max-width: 942px) {
     .mst {
+        width: 50%;
+    }
+
+    .mst2 {
         width: 50%;
     }
 
@@ -163,10 +171,18 @@ p {
     .mst {
         width: 70%;
     }
+
+    .mst2 {
+        width: 70%;
+    }
 }
 
 @media (max-width: 486px) {
     .mst {
+        width: 90%;
+    }
+
+    .mst2 {
         width: 90%;
     }
 }
