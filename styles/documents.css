@@ -116,13 +116,38 @@ p {
 
 .mst2 {
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 30%;
+    margin-top: 0px;
+    width: 60%;
     box-shadow: 2px 2px 5px white;
     transition-property: width;
     transition-duration: 400ms;
 }
+
+.cuaderno, .oraciones {
+    background: rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 25px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 0% 30%;
+    height: 550px;
+    padding: 10px 0px !important;
+    transition-property: margin, width, height;
+    transition-duration: 400ms;
+}
+
+
+.oraciones {
+margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1204px) {
     .mst {
@@ -134,14 +159,34 @@ p {
     }
 }
 
+    
+
 @media (max-width: 942px) {
     .mst {
         width: 50%;
     }
 
+    
     .mst2 {
-        width: 50%;
+    border-radius: 20px;
+    margin-top: 0px;
+    width: 50%;
+    box-shadow: 2px 2px 5px white;
+    transition-property: width;
+    transition-duration: 400ms;
+}
+
+.cuaderno, .oraciones {
+    margin: 0% 5%;
+    height: 580px;
+    padding: 10px 0px !important;
+}
+
+.oraciones {
+    margin-top: 40px;
     }
+    
+
 
     .back {
         background: #143c5e83;
@@ -173,8 +218,9 @@ p {
     }
 
     .mst2 {
-        width: 70%;
+        width: 60%;
     }
+
 }
 
 @media (max-width: 486px) {
@@ -183,10 +229,33 @@ p {
     }
 
     .mst2 {
-        width: 90%;
+        width: 80%;
     }
+
+    .cuaderno, .oraciones {
+        margin: 0% 5%;
+        height: 500px;
+        padding: 10px 0px !important;
+    }
+
+    .oraciones {
+        margin-top: 40px;
+        }
 }
 
+@media (max-width: 426px) {
+
+
+    .cuaderno, .oraciones {
+        margin: 0% 5%;
+        height: 450px;
+        padding: 10px 0px !important;
+    }
+
+    .oraciones {
+        margin-top: 40px;
+        }
+}
 
 
 
