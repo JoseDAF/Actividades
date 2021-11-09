@@ -15,19 +15,6 @@ header {
     transition-duration: 200ms;
 }
 
-header:hover {
-    margin: 0px 10px;
-    border-radius: 10px;
-}
-
-header:hover #p1 {
-    left: 20px;
-}
-
-header:hover #p2 {
-    right: 20px;
-}
-
 header #p1 {
     margin: 0;
     top: 10px;
