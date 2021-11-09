@@ -11,15 +11,31 @@ body {
 header {
     background: rgba( 0, 0, 0, 0.2 );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+    transition-property: border-radius, margin;
+    transition-duration: 200ms;
 }
 
+header:hover {
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+header:hover #p1 {
+    left: 20px;
+}
+
+header:hover #p2 {
+    right: 20px;
+}
 
 header #p1 {
     margin: 0;
     top: 10px;
     left: 10px;
     position: absolute;
+    transition-property: left;
+    transition-duration: 400ms;
+
 }
 
 header #p2 {
@@ -27,7 +43,8 @@ header #p2 {
     top: 10px;
     right: 10px;
     position: absolute;
-    right: 20px;
+    transition-property: right;
+    transition-duration: 400ms;
 }
 
 h1, p {
@@ -109,28 +126,6 @@ div {
 
 
 
-
-@media (max-width: 1321px){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 903px) {
     .btn {
         text-shadow: none;
@@ -139,12 +134,10 @@ div {
         display: inline-block;
         margin: 0px 5px !important;
     }
-    
-    .btn:hover {
-        font-size: 20px;
-        border-radius: 30px;
-        background: rgba( 255, 255, 255, 0.25 ); 
-        box-shadow: 0px 0px 0px transparent;   
+
+    header:hover {
+        margin: 0px 0px;
+        border-radius: 0px;
     }
 
     .acts {
