@@ -7,6 +7,17 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+    background: #081429;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #3c1a688c;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
 header h1 {
     margin-top: 80px;
 }
@@ -140,15 +151,6 @@ p {
 margin-top: 40px;
 }
 
-
-
-
-
-
-
-
-
-
 @media (max-width: 1204px) {
     .mst {
         width: 40%;
@@ -159,13 +161,10 @@ margin-top: 40px;
     }
 }
 
-    
-
 @media (max-width: 942px) {
     .mst {
         width: 50%;
     }
-
     
     .mst2 {
     border-radius: 20px;
@@ -176,14 +175,14 @@ margin-top: 40px;
     transition-duration: 400ms;
 }
 
-.cuaderno, .oraciones {
-    margin: 0% 5%;
-    height: 580px;
-    padding: 10px 0px !important;
-}
+    .cuaderno, .oraciones {
+        margin: 0% 5%;
+        height: 580px;
+        padding: 10px 0px !important;
+    }
 
-.oraciones {
-    margin-top: 40px;
+    .oraciones {
+        margin-top: 40px;
     }
     
 
