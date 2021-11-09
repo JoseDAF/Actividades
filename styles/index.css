@@ -140,6 +140,15 @@ div {
         border-radius: 0px;
     }
 
+    
+    header:hover #p1 {
+    left: 10px;
+    }
+
+    header:hover #p2 {
+    right: 10px;
+    }
+
     .acts {
         overflow: auto;
         white-space: nowrap;
