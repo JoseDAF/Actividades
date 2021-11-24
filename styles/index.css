@@ -7,18 +7,21 @@ body {
     overflow-x: hidden;
 }
 
-    body::-webkit-scrollbar {
-        width: 8px;
-        background: #081429;
-    }
+body::-webkit-scrollbar {
+    width: 8px;
+    background: #081429;
+}
 
-    body::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-color: #3c1a688c;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-    }
-    
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #3c1a688c;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
 header {
+    position: absolute;
+    top: 0;
+    width: 100%;
     background: rgba( 0, 0, 0, 0.2 );
     border-top: 1px solid rgba( 255, 255, 255, 0.18 );
     border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );;
@@ -71,6 +74,7 @@ div {
     margin-left: 95px;
     margin-top: 40px !important;
 }
+  
 
 .btn {
     color: white;
@@ -135,6 +139,21 @@ div {
         margin: 0px 5px !important;
     }
 
+    #anuncio1 {
+        display: none;
+    }
+    
+    #anuncio2 {
+        display: block;
+        bottom: 31%;
+        height: 40px;
+    }
+
+    #anuncio2 p {
+        margin: 0;
+        padding: 0;
+    }
+
 
 .btn:hover {
     background: rgba( 255, 255, 255, 0.25 );
@@ -142,13 +161,13 @@ div {
     transition-property: none;
     transition-duration: 400ms;
 }
-    
+
     header:hover {
         margin: 0px 0px;
         border-radius: 0px;
     }
 
-    
+
     header:hover #p1 {
     left: 10px;
     }
@@ -170,9 +189,9 @@ div {
         margin: 0;
         padding: 0;
     }
-    
-    
-    
+
+
+
     p {
         margin: 30px 10px;
         max-width: 100%;
@@ -184,7 +203,13 @@ div {
     white-space: nowrap;
     }
 
-    
+
     .act1 {
         margin-bottom: 0px;
+}
+
+@media (max-width: 670px) {
+    #anuncio2 {
+        bottom: 55%;
+    }
 }
